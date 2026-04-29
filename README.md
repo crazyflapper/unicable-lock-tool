@@ -21,6 +21,7 @@ Use at your own risk.
 - DVB-S2 adapter (multi-adapter cards supported)
 - Root access (`sudo`)
 - Python 3 + Flask
+- **Active license** — required to operate
 
 ---
 
