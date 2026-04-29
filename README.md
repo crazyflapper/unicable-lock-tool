@@ -77,5 +77,25 @@ License is issued manually by the administrator.
 4. Open browser: path from `install_launcher_lock_tool.sh`
 
 ---
+## 🛠️ Transponder Configuration Example
+
+Edit `lock.json` to match your setup:
+
+```json
+{
+  "lock_profile": {
+    "rf_freq_khz": 10758000,
+    "sr": 27500000,
+    "pol": "V",
+    "delivery_system": "DVBS2",
+    "modulation": "8PSK",
+    "fec": "3/4",
+    "sat_pos": 0
+  }
+}
+```
+
+That's it. One lock = 100% signal guaranteed. ✅
+
 
 *Experimental project — work in progress*
