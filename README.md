@@ -97,5 +97,10 @@ Edit `lock.json` to match your setup:
 
 That's it. One lock = 100% signal guaranteed. ✅
 
+## 📸 Screenshots
+
+![WebUI](screenshots/webui_adapters.png)
+![Channels](screenshots/webui_channels.png)
+![Lock Result](screenshots/webui_lock_result.png)
 
 *Experimental project — work in progress*
