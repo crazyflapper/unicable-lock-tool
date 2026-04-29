@@ -77,25 +77,43 @@ License is issued manually by the administrator.
 4. Open browser: path from `install_launcher_lock_tool.sh`
 
 ---
-## 🛠️ Transponder Configuration Example
+## 🛠️ Transponder Configuration
 
-Edit `lock.json` to match your setup:
+Edit `lock.json` — only these values need to be changed:
 
 ```json
-{
-  "lock_profile": {
-    "rf_freq_khz": 10758000,
-    "sr": 27500000,
-    "pol": "V",
-    "delivery_system": "DVBS2",
-    "modulation": "8PSK",
-    "fec": "3/4",
-    "sat_pos": 0
-  }
-}
+"rf_freq_khz": 10758000,   ← transponder frequency
+"sr":          27500000,   ← symbol rate
+"pol":         "V",        ← polarization V/H
+"delivery_system": "DVBS2", ← DVB-S or DVB-S2
+"modulation":  "8PSK",     ← modulation
+"fec":         "3/4",      ← FEC rate
+"sat_pos":     0           ← satellite position (0=default)
 ```
 
-That's it. One lock = 100% signal guaranteed. ✅
+All other parameters are fixed. That's it! ✅
+
+
+
+## 📡 LNB / Multiswitch Configuration
+
+> ⚠️ **Important:** UB channel frequencies in `lock.json`
+> must match **exactly** the values described in your 
+> LNB or multiswitch manual/datasheet.
+
+Always refer to your converter (LNB/multiswitch) documentation
+for correct UB channel frequencies — values vary by 
+manufacturer, model and region.
+
+Update `ub_channels` section in `lock.json` accordingly:
+
+```json
+{ "id": 1, "slot": 1, "freq_khz": 1210000, "standard": ["EN50494", "EN50607"] },
+{ "id": 2, "slot": 2, "freq_khz": 1420000, "standard": ["EN50494", "EN50607"] }
+```
+
+Frequency range: **950 MHz — 2150 MHz** (EN50607 standard)
+
 
 ## 📸 Screenshots
 
