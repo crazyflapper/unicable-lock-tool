@@ -71,7 +71,7 @@ License is issued manually by the administrator.
 1. Download and install
 2. Contact author for license activation
 3. Run WebUI: `sudo systemctl enable --now lock-tool-webui`
-4. Open browser: path from `install_launcher_lock_tool.sh'
+4. Open browser-path from: 'install_launcher_lock_tool.sh'
 
 ---
 
