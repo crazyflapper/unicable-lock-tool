@@ -32,7 +32,7 @@
     { "id": 12, "label": "CH12", "slot": 12, "freq_khz": 1292000, "standard": ["EN50607"] },
     { "id": 13, "label": "CH13", "slot": 13, "freq_khz": 1328000, "standard": ["EN50607"] },
     { "id": 14, "label": "CH14", "slot": 14, "freq_khz": 1364000, "standard": ["EN50607"] },
-    { "id": 15, "label": "CH15", "slot": 15, "freq_khz": 1458000, "standard": ["EN50607"], "note": "tbs6903-OK" },
+    { "id": 15, "label": "CH15", "slot": 15, "freq_khz": 1458000, "standard": ["EN50607"] },
     { "id": 16, "label": "CH16", "slot": 16, "freq_khz": 1494000, "standard": ["EN50607"] },
     { "id": 17, "label": "CH17", "slot": 17, "freq_khz": 1530000, "standard": ["EN50607"] },
     { "id": 18, "label": "CH18", "slot": 18, "freq_khz": 1566000, "standard": ["EN50607"] },
